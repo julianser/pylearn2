@@ -72,10 +72,15 @@ class Dropout(DefaultDataSpecsMixin, Cost):
 
     def expr(self, model, data, ** kwargs):
         """
-        .. todo::
+        TODO
 
-            WRITEME
+        Parameters
+        ----------
+        model : TODO
+        data : TODO
+        kwargs : TODO
         """
+
         space, sources = self.get_data_specs(model)
         space.validate(data)
         (X, Y) = data
